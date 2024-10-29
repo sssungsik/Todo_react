@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ToDoList from './ToDoList';
+const toDoItems = [
+  {
+    title : '빨래',
+    completed : false
+  },
+  {
+    title : '빨래널기',
+    completed : false
+  },
+  {
+    title : '설거지',
+    completed : false
+  },
+  {
+    title : '분리수거',
+    completed : false
+  },
+];
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      toDoItems
+    }
+  }
+
+  render() {
+    return (
+      <div className="container">
+        <div class="header">
+          <h1>안녕하세요.</h1>
+        </div>
+        <ToDoList toDoItems={this.state.toDoItems}/>
+      </div>
+    )
+  }
 }
 
 export default App;
