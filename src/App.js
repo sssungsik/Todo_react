@@ -3,7 +3,7 @@ import './App.css';
 import ToDoList from './ToDoList';
 const toDoItems = [
   {
-    title : '빨래',
+    title : '좋은하루 되세요',
     completed : false
   },
   {
