@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ToDoList from './ToDoList';
+import ToDoCreate from './ToDoCreate';
 const toDoItems = [
   {
     title : '좋은하루 되세요',
@@ -35,6 +36,7 @@ class App extends React.Component {
         <div class="header">
           <h1>안녕하세요.</h1>
         </div>
+        <ToDoCreate></ToDoCreate>
         <ToDoList toDoItems={this.state.toDoItems}/>
       </div>
     )
