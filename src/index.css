@@ -18,6 +18,10 @@ code {
     monospace;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 400px;
   margin: 50px auto 0 auto;
@@ -50,4 +54,19 @@ code {
 .title {
   flex: 1;
   text-align: left;
+}
+
+.create-container {
+  margin: 20px;
+}
+
+.create-form {
+  display: flex;
+  input {
+    flex: 4;
+    padding: 10px;
+  }
+  button {
+    flex: 1;
+  }
 }
