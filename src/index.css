@@ -10,7 +10,7 @@ body {
   font-family: 'Pretendard-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: whitesmoke;
+  background: black;
 }
 
 code {
@@ -28,12 +28,10 @@ button {
   padding-bottom: 30px;
   text-align: center;
   filter: 0px 0px 5px black;
-  background: white;
  
 }
 
 .header {
-  background: rgb(62, 75, 255);
   padding: 25px;
   border-radius: 5px;
 }
@@ -63,10 +61,17 @@ button {
 .create-form {
   display: flex;
   input {
+    background-color: rgb(40, 40, 40);
+    border: none;
     flex: 4;
     padding: 10px;
+    font-family: 'Pretendard-Regular';
+    border-radius: 10px;
+  }
+  input:focus {
+    outline: none;
   }
   button {
-    flex: 1;
+    flex: 0.5;
   }
 }
