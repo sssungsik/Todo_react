@@ -10,7 +10,6 @@ body {
   font-family: 'Pretendard-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: black;
 }
 
 code {
@@ -28,7 +27,9 @@ button {
   padding-bottom: 30px;
   text-align: center;
   filter: 0px 0px 5px black;
- 
+  background: black;
+  border-radius: 30px;
+  height: 580px;
 }
 
 .header {
@@ -37,8 +38,16 @@ button {
 }
 
 .header h1 {
-  font-size: 30px;
+  font-size: 36px;
   margin: 0px;
+  color: white;
+  text-align: left;
+}
+
+.list-items {
+  background-color: rgb(40, 40, 40);
+  margin: 20px;
+  border-radius: 10px;
   color: white;
 }
 
@@ -46,8 +55,15 @@ button {
   display: flex;
   align-items: center;
   padding: 10px;
-  font-size: 18px;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(70, 70, 70);
+  margin: 0 0 0 13px;
+  
 }
+.list-item:last-child {
+  border-bottom: none;
+}
+
 
 .title {
   flex: 1;
@@ -60,7 +76,9 @@ button {
 
 .create-form {
   display: flex;
+  position: relative;
   input {
+    color: white;
     background-color: rgb(40, 40, 40);
     border: none;
     flex: 4;
@@ -71,7 +89,17 @@ button {
   input:focus {
     outline: none;
   }
+  input::placeholder{
+    color: rgb(96, 96, 96);
+  }
   button {
-    flex: 0.5;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    background: none;
+    border: none;
   }
 }

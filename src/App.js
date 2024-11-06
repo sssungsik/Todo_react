@@ -38,7 +38,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="header">
-          <h1>안녕하세요.</h1>
+          <h1>모든 메모</h1>
         </div>
         <ToDoCreate createItem={this.createItem} />
         <ToDoList
