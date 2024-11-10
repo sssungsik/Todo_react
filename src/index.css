@@ -54,11 +54,16 @@ button {
 .list-item {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 10px 10px 19px;
   font-size: 14px;
   border-bottom: 1px solid rgb(70, 70, 70);
-  margin: 0 0 0 13px;
-  
+  /* margin: 0 0 0 13px; */
+ 
+}
+.list-item:hover {
+  background-color:rgb(97, 97, 97);
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 .list-item:last-child {
   border-bottom: none;
@@ -102,4 +107,26 @@ button {
     background: none;
     border: none;
   }
+}
+
+.btns {
+  .editBtn {
+    color: rgb(255, 204, 0);
+  }
+  .editBtn:hover {
+    color: rgba(255, 204, 0, 0.5);
+  }
+  .delBtn {
+    color: rgb(255, 67, 67);
+  }
+  .delBtn:hover {
+    color: rgba(255, 67, 67, 0.475);
+  }
+  button {
+    font-size: 20px;
+  border: none;
+  background: none;
+
+  }
+  
 }

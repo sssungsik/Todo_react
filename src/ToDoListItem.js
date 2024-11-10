@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { Trash3Fill } from 'react-bootstrap-icons';
+import { PencilSquare } from 'react-bootstrap-icons';
 
 class ToDoListItem extends React.Component {
   handleEdit = () => {
@@ -19,9 +21,9 @@ class ToDoListItem extends React.Component {
 
   renderButtons() {
     return (
-      <span>
-        <button onClick={this.handleEdit}>수정</button>
-        <button onClick={this.handleDelete}>삭제</button>
+      <span class="btns">
+        <button class="editBtn" onClick={this.handleEdit}><PencilSquare/></button>
+        <button class="delBtn" onClick={this.handleDelete}><Trash3Fill/></button>
       </span>
     );
   }
