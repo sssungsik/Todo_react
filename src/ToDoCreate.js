@@ -23,7 +23,7 @@ class ToDoCreate extends React.Component {
     return (
        <div className='create-container'>
             <form className='create-form' onSubmit={this.handleSubmit}>
-                <input type='text' placeholder='추가' ref='createNew' />
+                <input type='text' placeholder='추가' ref='createNew' autoFocus />
                 <button><Plus /></button>
             </form>
        </div>
