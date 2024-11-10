@@ -5,10 +5,10 @@ import ToDoList from './ToDoList';
 import ToDoCreate from './ToDoCreate';
 import ToDoDate from './ToDodate';
 const toDoItems = [
-  { title: '좋은하루 되세요', completed: false },
-  { title: '빨래널기', completed: false },
-  { title: '설거지', completed: false },
-  { title: '분리수거', completed: false },
+  { title: '날짜앱 테스트코드 확인', completed: false },
+  { title: '내일 최성철차장 미팅', completed: false },
+  { title: '김대리 merge....', completed: false },
+  { title: '우유 바나나 삼결살', completed: false },
 ];
 
 class App extends React.Component {

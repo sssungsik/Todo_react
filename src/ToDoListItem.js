@@ -5,7 +5,7 @@ import { PencilSquare } from 'react-bootstrap-icons';
 
 class ToDoListItem extends React.Component {
   handleEdit = () => {
-    const newTitle = prompt("새 할 일을 입력하세요:", this.props.title);
+    const newTitle = prompt("메모 수정", this.props.title);
     if (newTitle) {
       this.props.editItem(this.props.title, newTitle);
     }
